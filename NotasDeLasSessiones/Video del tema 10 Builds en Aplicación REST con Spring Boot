@@ -1,0 +1,24 @@
+Desde la pestaña MAVEN se puede gestionar todo el ciclo de vida del proyecto
+en la carpeta target se generaria todo un archivo empaquetado para colocarlo en un servidor
+
+Por otro lado, En la parte superior, se le puede dar click en editConfiguration
+y desde esta vista se puede setear la configuracion de la construccion del proyecto
+cuando va para un ambiente de produccion.
+
+
+Creamos un nuevo protyecto
+
+Realizamos todoo lo aprendido hasta el momento.
+luego ejeucutamos en comando clean, luego el comando package de maven
+y asi tenemos el .jar de nuestra app.
+
+Aprendimos comom crear diferentes perfiles con diferentes configuraciones
+del documeto application.properties. esto con el fin de utilizar puertos, conexiones
+y demas configuraciones diferentes, dependiendo del entorno utilizado
+ya sea prod, dev, etc.
+
+"cargar perfiles" activamos diferentes documentos de application.properties con el comando
+spring.profiles.active= ...
+
+tambien podemos cargar variables de entorno, dentro de los archivos
+appication.properties.
