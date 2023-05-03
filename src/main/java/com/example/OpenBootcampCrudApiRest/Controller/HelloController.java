@@ -14,8 +14,8 @@ public class HelloController {
 
 
     @ApiOperation(value = "Método saludo 'Hola Mundo' desde SpringBoot", notes = "Mediante la peticion Se espera obtener un mensaje que diga 'Hola mundo desde SpringBoot'" )
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String holaMundo(){
-        return "Hola mundo desde Spring";
+        return "Julio Cesar Cardona Maturana ES LA GAVER";
     }
 }
