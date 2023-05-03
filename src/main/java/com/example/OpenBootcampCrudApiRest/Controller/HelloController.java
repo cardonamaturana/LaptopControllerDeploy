@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 //Este es el archivo en el repositorio cardona.maturana
-@RequestMapping("/")
+//@RequestMapping("/")
 public class HelloController {
 
 
     @ApiOperation(value = "Método saludo 'Hola Mundo' desde SpringBoot", notes = "Mediante la peticion Se espera obtener un mensaje que diga 'Hola mundo desde SpringBoot'" )
     @GetMapping("/")
     public String holaMundo(){
-        return "Julio Cesar Cardona Maturana ES LA GAVER";
+        return "Julio Cesar Cardona Maturana ";
     }
 }
