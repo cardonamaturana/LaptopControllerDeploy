@@ -16,19 +16,22 @@ public class HelloController {
 
     @ApiIgnore
     @ApiOperation(value = "Método saludo 'Hola Mundo' desde SpringBoot", notes = "Mediante la peticion Se espera obtener un mensaje que diga 'Hola mundo desde SpringBoot'" )
-    @GetMapping("/hola")
+    @GetMapping("/")
     public String holaMundo(){
         return "Julio Cesar Cardona Maturana ";
         //Cambio en el main
     }
 
-    @ApiIgnore
-    @GetMapping("/")
-    public RedirectView redirect() {
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl("https://casual-invention-production.up.railway.app/swagger-ui/index.html#/hello-controller/holaMundoUsingGET");
-        return redirectView;
+
     }
+
+//    @ApiIgnore
+//    @GetMapping("/")
+//    public RedirectView redirect() {
+//        RedirectView redirectView = new RedirectView();
+//        redirectView.setUrl("https://casual-invention-production.up.railway.app/swagger-ui/index.html#/hello-controller/holaMundoUsingGET");
+//        return redirectView;
+//    }
 
 
 
