@@ -13,5 +13,18 @@ import springfox.documentation.annotations.ApiIgnore;
 //Este es el archivo en el repositorio cardona.maturana
 //@RequestMapping("/")
 public class HelloController {
-    //Se borraron las dos implemenaciones para que no generen conflictos luego
-}
+
+
+
+    @ApiIgnore
+    @ApiOperation(value = "Método saludo 'Hola Mundo' desde SpringBoot", notes = "Mediante la peticion Se espera obtener un mensaje que diga 'Hola mundo desde SpringBoot'" )
+    @GetMapping("/")
+    public String holaMundo(){
+        return "Julio Cesar Cardona Maturana ";
+        //Cambio en el main
+    }
+
+
+    }
+
+
