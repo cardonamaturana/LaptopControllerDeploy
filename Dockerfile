@@ -1,5 +1,5 @@
 # Imagen base de Java
-FROM openjdk
+FROM openjdk:17
 
 # Establecer el directorio de trabajo en el contenedor
 WORKDIR /app
