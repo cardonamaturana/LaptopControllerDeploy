@@ -2,22 +2,23 @@ package com.example.OpenBootcampCrudApiRest;
 
 import com.example.OpenBootcampCrudApiRest.Entity.LaptopEntity;
 import com.example.OpenBootcampCrudApiRest.Repository.LaptopRepository;
+import org.aspectj.bridge.IMessage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Profile;
 
 @SpringBootApplication
 public class OpenBootcampCrudApiRestApplication {
-
 	public static void main(String[] args) {
 
 		ApplicationContext context = SpringApplication.run(OpenBootcampCrudApiRestApplication.class, args);
-
 		//LaptopRepository repository = context.getBean(LaptopRepository.class);
 		//Linea para insertar una laptor de manera anonima.
 		//repository.save(new LaptopEntity("zx10", "01/07/1996", "Accer"));
-	    //repository.save(new LaptopEntity("Resd58", "25/10/1995", "Hp"));
+		//repository.save(new LaptopEntity("Resd58", "25/10/1995", "Hp"));
 		//repository.save(new LaptopEntity("TpLinkUB500", "07/05/2021", "Siragón"));
 
 
